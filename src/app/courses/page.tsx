@@ -1,8 +1,6 @@
 import { useState } from 'react'
 import { Course } from '@/types/course'
 import { CourseItem } from './components/Course'
-import { ToastContainer } from 'react-toastify'
-import 'react-toastify/dist/ReactToastify.css'
 
 export const getCourses = async (): Promise<Course[]> => {
   try {
@@ -37,14 +35,11 @@ const Courses = async () => {
   const courses = await getCourses()
 
   return (
-    <>
-      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 sm:grid-cols-2 gap-4 m-auto justify-items-center p-4">
-        {courses.map((course) => (
-          <CourseItem key={course.id} course={course} />
-        ))}
-      </div>
-      <ToastContainer position="bottom-right" />
-    </>
+    <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 sm:grid-cols-2 gap-4 m-auto justify-items-center p-4">
+      {courses.map((course) => (
+        <CourseItem key={course.id} course={course} />
+      ))}
+    </div>
   )
 }
 
