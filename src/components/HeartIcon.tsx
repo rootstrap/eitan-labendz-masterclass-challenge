@@ -6,7 +6,7 @@ interface ILikeIconProps {
 
 export const HeartIcon = ({ active }: ILikeIconProps) => {
   return (
-    <div className="absolute cursor-pointer bottom-1 right-1 bg-white p-1 rounded-full h-7 w-7 flex justify-center items-center">
+    <div className="cursor-pointer bg-white p-1 rounded-full h-7 w-7 flex justify-center items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width="20"

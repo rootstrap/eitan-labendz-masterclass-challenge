@@ -38,7 +38,7 @@ const Courses = async () => {
 
   return (
     <>
-      <div className="grid md:grid-cols-4 grid-cols-2 sm:grid-cols-3 gap-4 m-7">
+      <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 sm:grid-cols-2 gap-4 m-auto justify-items-center p-4">
         {courses.map((course) => (
           <CourseItem key={course.id} course={course} />
         ))}
