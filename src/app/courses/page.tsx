@@ -35,11 +35,11 @@ const Courses = async () => {
   const courses = await getCourses()
 
   return (
-    <div className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 sm:grid-cols-2 gap-4 m-auto justify-items-center p-4">
+    <main className="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-1 sm:grid-cols-2 gap-4 m-auto justify-items-center p-4">
       {courses.map((course) => (
         <CourseItem key={course.id} course={course} />
       ))}
-    </div>
+    </main>
   )
 }
 

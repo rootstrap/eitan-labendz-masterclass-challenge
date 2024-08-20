@@ -43,13 +43,13 @@ export const CourseItem = ({ course }: ICourseProps) => {
         <Image
           priority
           src={course.instructor_image_url}
-          alt="course instructor image"
+          alt={`${course.instructor_name} image`}
           width={300}
           height={384}
           role="img"
           className="object-cover h-full transform transition-transform duration-300 ease-in-out group-hover:scale-105 group-hover:-translate-y-2"
         />
-        {/* <div className="absolute bottom-0 left-0 w-full h-3/4 bg-gradient-to-t from-[#272727] to-transparent"></div> */}
+        <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-[#272727] to-transparent"></div>
         <div className="absolute bottom-16 w-full text-center flex flex-col justify-start h-8">
           <h4 className="text-2xl font-bold">{course.instructor_name}</h4>
           <p className="font-semibold">{course.title}</p>
