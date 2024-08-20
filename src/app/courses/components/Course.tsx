@@ -35,7 +35,7 @@ export const CourseItem = ({ course }: ICourseProps) => {
     <button
       className="flex flex-col gap-2 cursor-pointer text-left group"
       role="group"
-      aria-label={`Course: ${course.title}`}
+      aria-label={`Toggle favorite for: ${course.title}`}
       onClick={handleToggleFavorite}
       disabled={isLoading}
     >
