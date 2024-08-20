@@ -18,6 +18,14 @@ pnpm dev
 bun dev
 ```
 
+Make sure you set the next environment variables in .env.local file
+
+```
+API_BASE_URL=base_url_example
+API_VERSION=example/v1
+API_EMAIL=user@example.com
+```
+
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
@@ -26,6 +34,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 
 ## Comments
 - The app is responsive and accesible
+  
 ![image](https://github.com/user-attachments/assets/7aa6757c-8061-4a93-81c6-536351bde9ca)
 
 - Error messages could be improved
